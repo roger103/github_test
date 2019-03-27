@@ -9,7 +9,7 @@ function getData(){
 	let name=document.getElementById("name").value;
 	let req=new XMLHttpRequest();//JavaScript內建的物件
 	//req.open(連線方法,連線網址);//準備連線資訊
-	req.open("get","http://localhost:8080/city.php?name="+name);
+	req.open("get","https://roger103.github.io/github_test/city.php?name="+name);
 	//註冊load事件，連線完成後觸發
 	req.addEventListener("load",function(){
 		//console.log(req.responseText);
@@ -24,7 +24,7 @@ function getData(){
 	let name=document.getElementById("name").value;
 	let req=new XMLHttpRequest();//JavaScript內建的物件
 	//req.open(連線方法,連線網址);//準備連線資訊
-	req.open("post","http://localhost:8080/city.php?");
+	req.open("post","https://roger103.github.io/github_test/city.php?");
 	req.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 	//註冊load事件，連線完成後觸發
 	req.addEventListener("load",function(){
